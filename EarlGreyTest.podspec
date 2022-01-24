@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
   s.dependency "eDistantObject", "1.0.2"
 
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/EarlGreyTest/**" "${PODS_ROOT}/eDistantObject/"',
-                            'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/EarlGreyTest/**" "${PODS_ROOT}/eDistantObject/"' }
+                            'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/EarlGreyTest/**" "${PODS_ROOT}/eDistantObject/"',
+                            'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+                          }
 
   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 

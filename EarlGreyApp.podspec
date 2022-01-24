@@ -19,7 +19,13 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "EarlGreyApp/AppFramework.framework"
 
   s.pod_target_xcconfig = { "FRAMEWORK_SEARCH_PATHS" =>"$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks",
-                            "ENABLE_BITCODE" => "NO" }
+                            "ENABLE_BITCODE" => "NO",
+                            'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+                          }
+
+  s.user_target_xcconfig = {
+                            'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+                          }
 
   s.platform = :ios, '10.0'
 end
