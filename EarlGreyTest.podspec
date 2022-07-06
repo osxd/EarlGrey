@@ -2,20 +2,20 @@
 Pod::Spec.new do |s|
 
   s.name = "EarlGreyTest"
-  s.version = "2.3.0"
+  s.version = "2.3.1"
   s.summary = "iOS UI Automation Test Framework"
   s.homepage = "https://github.com/jazz-mobility/EarlGrey"
   s.author = "Google LLC."
   s.summary = 'EarlGrey is a native iOS UI automation test framework that enables you to write clear, concise tests.\\n\\n'\
                 'With the EarlGrey framework, you have access to enhanced synchronization features. EarlGrey automatically'\
                 ' synchronizes with the UI, network requests, and various queues, but still allows you to manually implement'\
-                ' customized timings, if needed.\\n\\nEarlGrey’s synchronization features help ensure that the UI is in a'\
+                ' customized timings, if needed.\\n\\nEarlGrey\'s synchronization features help ensure that the UI is in a'\
                 ' steady state before actions are performed. This greatly increases test stability and makes tests highly'\
-                ' repeatable.\\n\\nEarlGrey works in conjunction with the XCTest framework and integrates with Xcode’s'\
+                ' repeatable.\\n\\nEarlGrey works in conjunction with the XCTest framework and integrates with Xcode\'s'\
                 ' Test Navigator so you can run tests directly from Xcode or the command line (using xcodebuild).'
   s.license = { :type => "Apache 2.0", :file => "LICENSE" }
 
-  s.source = { :git => "https://github.com/jazz-mobility/EarlGrey.git", :tag => "2.3.0" }
+  s.source = { :git => "https://github.com/jazz-mobility/EarlGrey.git", :tag => "2.3.1" }
 
   s.dependency "eDistantObject", "1.0.2"
 
