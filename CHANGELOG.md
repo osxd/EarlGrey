@@ -1,3 +1,11 @@
+## [2.3.1](https://github.com/jazz-mobility/EarlGrey/tree/2.3.0) (06/07/2022)
+
+### Bug fixes
+* Hardcode fix for the problem with the encoding for &rsquo; into &apos; _automagically_ somewhere in the ruby/cocoapods internals
+
+#### CHANGELOG cuts at 2.3.0, since 2.2.1 was cloned from the google's repo
+
+
 ## [2.2.1](https://github.com/google/EarlGrey/tree/2.2.0) (12/9/2020)
 ```
 Baseline: [91dc49f]
